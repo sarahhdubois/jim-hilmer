@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrating Jim Hilmer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Jim Hilmer</h1>
+            <p class="subtitle">A life worth celebrating</p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#photos">Photos</a>
+        <a href="#memories">Memories</a>
+        <a href="#share">Share a Story</a>
+    </nav>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>About Jim</h2>
+            <p class="about-text">
+                This is a place to celebrate Jim Hilmer — to share photos, 
+                stories, and favorite moments. We invite family, friends, and 
+                all who know him to share what Jim means to you. He'd love to 
+                hear your stories!
+            </p>
+        </div>
+    </section>
+
+    <section id="photos" class="section photos">
+        <div class="container">
+            <h2>Photos</h2>
+            <div class="gallery" id="gallery">
+                <div class="gallery-placeholder">
+                    <p>Photos will appear here as they are shared.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="memories" class="section memories">
+        <div class="container">
+            <h2>Stories &amp; Moments</h2>
+            <div id="memories-list" class="memories-list">
+                <div class="memory-placeholder">
+                    <p>Be the first to share a memory of Jim.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="share" class="section share">
+        <div class="container">
+            <h2>Share a Story</h2>
+            <p class="share-intro">Share a story, a favorite moment, or a photo with Jim. He'd love to hear from you!</p>
+            <form id="memory-form" class="memory-form" action="https://formspree.io/f/mdavkzqw" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="relationship">Relationship to Jim</label>
+                    <input type="text" id="relationship" name="relationship" placeholder="e.g., Friend, Colleague, Neighbor">
+                </div>
+                <div class="form-group">
+                    <label for="memory">Your Memory or Story</label>
+                    <textarea id="memory" name="memory" rows="6" required placeholder="Share a favorite story or moment with Jim..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="photo">Upload a Photo</label>
+                    <input type="file" id="photo" name="photo" accept="image/*">
+                    <small>Optional — JPG, PNG, or GIF</small>
+                </div>
+                <button type="submit" class="btn">Share with Jim</button>
+            </form>
+            <div id="form-message" class="form-message" hidden></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Celebrating Jim Hilmer</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
